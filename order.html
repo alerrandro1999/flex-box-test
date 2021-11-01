@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang=pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .flex-container{
+            display: flex;
+        }
+
+        .directionColumn{
+            flex-direction: column;
+            height: 300px;
+        }
+
+        .red{
+            flex: 1;
+        }
+
+        .blue{
+            flex: 2;
+            order: 3;
+        }
+
+        .yellow{
+            flex: 3;
+            order: 1;
+        }
+
+        .green{
+            flex: 4;
+        }
+
+      
+    </style>
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Order</h1>
+    <h2>Flex Row</h2>
+    <div class="flex-container">
+        <div class="red">1</div>
+        <div class="blue">2</div>
+        <div class="yellow">3</div>
+        <div class="green">4</div>
+    </div>
+
+    <hr>
+
+    <h2>Flex Column</h2>
+    <div class="flex-container directionColumn">
+        <div class="red">1</div>
+        <div class="blue">2</div>
+        <div class="yellow">3</div>
+        <div class="green">4</div>
+    </div>
+
+    <hr>
+
+    
+</body>
+</html>

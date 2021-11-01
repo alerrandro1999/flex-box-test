@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang=pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .flex-container{
+            display: flex;
+            max-width: 500px;
+            height: 300px;
+            background-color: #444444;
+        }
+
+        .exemplo1 div{
+            width: 70px;
+            height: 70px;
+        }
+
+        .exemplo1{
+            justify-content: center;
+            align-items: center;
+        }
+
+        .exemplo2 div{
+            width: 200px;
+            height: 100px;
+        }
+
+        .exemplo2 {
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+        }
+
+        .exemplo3 .green{
+            height: 50px;
+            width: 50px;
+            align-self: flex-end;
+            margin-left: 150px;
+        }
+
+      
+    </style>
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Align</h1>
+    <h2>Exemplo 1</h2>
+    <div class="flex-container exemplo1">
+        <div class="red">1</div>
+        <div class="blue">2</div>
+        <div class="yellow">3</div>
+        <div class="green">4</div>
+    </div>
+
+    <hr>
+
+    <h1>Align</h1>
+    <h2>Exemplo 2</h2>
+    <div class="flex-container exemplo2">
+        <div class="red">1</div>
+        <div class="blue">2</div>
+        <div class="yellow">3</div>
+        <div class="green">4</div>
+    </div>
+
+    <hr>
+
+    
+    <h1>Align</h1>
+    <h2>Exemplo 3</h2>
+    <div class="flex-container exemplo2 exemplo3">
+        <div class="red">1</div>
+        <div class="blue">2</div>
+        <div class="yellow">3</div>
+        <div class="green">4</div>
+    </div>
+
+    <hr>
+
+
+    
+</body>
+</html>
